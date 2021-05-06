@@ -202,7 +202,7 @@ int takeTurn(Deck &deck, Deck &hand, Deck &discard, GameState &gameState){
     //for(int j = 0; j < gameState.numCardsToPlay; j++){
     if(!gameState.skipTurn){
         // Collect user input
-        cout << discard.size() << ' ' << deck.size() << ' ' << endl;
+        cout << "Discard Pile: " << discard.size() << " Cards in deck: " << deck.size() << endl << endl;
         cout << "What would you like to do?" << endl;
         int i;
         for(i = 0; i < hand.size(); i++){
