@@ -26,8 +26,6 @@ class GameState{
     /// indicates whether the index of the next player is determined by incrementing
     /// or decrementing. Toggled by the reverse card.
     TurnDirection turnDirection;
-    
-    GameState getDirection() const;
     /// Constructor. Passed the number of players for the current game.
     GameState(int n);
     /// Used to update the next turn.

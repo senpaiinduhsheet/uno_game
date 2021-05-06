@@ -8,22 +8,15 @@ GameState::GameState(int n){
     turnDirection = LEFT;
 }
 
-TurnDirection GameState::getDirection() {
-    return turnDirection;
-}
-
 void GameState::nextTurn(){
     if(turnDirection == LEFT){
         currentPlayerIndex++;
         if(currentPlayerIndex >= numPlayers){
             currentPlayerIndex = 0;
         }
-    } 
-    else {
+    } else {
         currentPlayerIndex--;
-        if(currentPlayerIndex < 0) {
+        if(currentPlayerIndex < 0)
             currentPlayerIndex = numPlayers - 1;
-        }
     }
-
 }
